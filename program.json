@@ -1,0 +1,32 @@
+{
+    "オードリーのオールナイトニッポン": {
+        "title": "オードリーのオールナイトニッポン",
+        "day": "sunday",
+        "station": "LFR",
+        "start": "0100",
+        "end": "0300",
+        "artist": "オードリー(若林正恭/春日俊彰)",
+        "artwork": "./artwork/audrey.png",
+        "playlist": "ca0dd8ae-4eb8-4d03-a832-6092c19ab8fd"
+    },
+    "JUNK 伊集院光・深夜の馬鹿力": {
+        "title": "JUNK 伊集院光・深夜の馬鹿力",
+        "day": "tuesday",
+        "station": "TBS",
+        "start": "0100",
+        "end": "0300",
+        "artist": "伊集院光",
+        "artwork": "./artwork/baka.png",
+        "playlist": "15c1b264-dbd3-4dc2-9258-3dbf45f200b9"
+    },
+    "JUNK 爆笑問題カーボーイ": {
+        "title": "JUNK 爆笑問題カーボーイ",
+        "day": "wednesday",
+        "station": "TBS",
+        "start": "0100",
+        "end": "0300",
+        "artist": "爆笑問題",
+        "artwork": "./artwork/cowboy.png",
+        "playlist": "2a321013-a21b-4d82-b47b-d53553ded398"
+    }
+}
