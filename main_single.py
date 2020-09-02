@@ -66,9 +66,15 @@ def record(obj, program):
     title = start + " " + obj["title"]
     # 録音
     print("[rec] " + title, file=sys.stderr)
+<<<<<<< HEAD
     if 1 == subprocess.run(["./rec_radiko_ts.sh", "-s", obj["station"], "-f", start, "-t", end, "-o", RECORD_DIR + title]):
         print("[error] " + title, file=sys.stderr)
         return
+=======
+    # if 1 == subprocess.run(["./rec_radiko_ts.sh", "-s", obj["station"], "-f", start, "-t", end, "-o", RECORD_DIR + title]):
+    #     print("[error] " + title, file=sys.stderr)
+    #     return
+>>>>>>> b9c2b34699c7c78da95c107c36f1f13d266c6743
     print("[done] " + title, file=sys.stderr)
     # タグ編集
     # setID3(title, artist=obj["artist"], album=obj["title"], artwork=obj["artwork"])

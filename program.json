@@ -28,76 +28,124 @@
         "artist": "爆笑問題",
         "artwork": "./artwork/cowboy.png",
         "playlist": "60d224de-4776-4762-a990-9c5de5bcb4b9"
+<<<<<<< HEAD
     },
     "JUNK 山里亮太の不毛な議論": {
+=======
+	},
+	"JUNK 山里亮太の不毛な議論": {
+>>>>>>> b9c2b34699c7c78da95c107c36f1f13d266c6743
         "title": "JUNK 山里亮太の不毛な議論",
         "day": "thursday",
         "station": "TBS",
         "start": "0100",
         "end": "0300",
+<<<<<<< HEAD
         "artist": "山里亮太",
         "playlist": "2d997138-c148-48f7-9d06-07315137b439"
     },
     "JUNK おぎやはぎのメガネびいき": {
+=======
+        "artist": "山里亮太"
+	},
+	"JUNK おぎやはぎのメガネびいき": {
+>>>>>>> b9c2b34699c7c78da95c107c36f1f13d266c6743
         "title": "JUNK おぎやはぎのメガネびいき",
         "day": "friday",
         "station": "TBS",
         "start": "0100",
         "end": "0300",
+<<<<<<< HEAD
         "artist": "おぎやはぎ",
         "playlist": "2735e0b2-a638-47ec-9350-21e995cd8e39"
     },
     "JUNK バナナマンのバナナムーンGOLD": {
+=======
+        "artist": "おぎやはぎ"
+	},
+	"JUNK バナナマンのバナナムーンGOLD": {
+>>>>>>> b9c2b34699c7c78da95c107c36f1f13d266c6743
         "title": "JUNK バナナマンのバナナムーンGOLD",
         "day": "saturday",
         "station": "TBS",
         "start": "0100",
         "end": "0300",
+<<<<<<< HEAD
         "artist": "バナナマン",
         "playlist": "ecff11ca-8057-4407-bbf5-79a5318c9d27"
     },
     "マイナビ Laughter Night": {
+=======
+        "artist": "バナナマン"
+	},
+	"マイナビ Laughter Night": {
+>>>>>>> b9c2b34699c7c78da95c107c36f1f13d266c6743
         "title": "マイナビ Laughter Night",
         "day": "saturday",
         "station": "TBS",
         "start": "0000",
         "end": "0100",
+<<<<<<< HEAD
         "artist": "伊東楓（TBSアナウンサー）/空気階段",
         "playlist": "5fb3d426-928e-4e7f-91be-f899188d0395"
     },
     "Creepy Nutsのオールナイトニッポン0(ZERO)": {
+=======
+        "artist": "伊東楓（TBSアナウンサー）/空気階段"
+	},
+	"Creepy Nutsのオールナイトニッポン0(ZERO)": {
+>>>>>>> b9c2b34699c7c78da95c107c36f1f13d266c6743
         "title": "Creepy Nutsのオールナイトニッポン0(ZERO)",
         "day": "wednesday",
         "station": "LFR",
         "start": "0300",
         "end": "0430",
+<<<<<<< HEAD
         "artist": "Creepy Nuts（R-指定、DJ松永）",
         "playlist": "002af663-5b56-43a5-8b85-4a4a9be6337d"
     },
     "佐久間宣行のオールナイトニッポン0(ZERO)": {
+=======
+        "artist": "Creepy Nuts（R-指定、DJ松永）"
+	},
+	"佐久間宣行のオールナイトニッポン0(ZERO)": {
+>>>>>>> b9c2b34699c7c78da95c107c36f1f13d266c6743
         "title": "佐久間宣行のオールナイトニッポン0(ZERO)",
         "day": "thursday",
         "station": "LFR",
         "start": "0300",
         "end": "0430",
+<<<<<<< HEAD
         "artist": "佐久間宣行(TV東京・プロデューサー)",
         "playlist": "c758814b-614f-46c9-9df6-44c15bd47db5"
     },
     "三四郎のオールナイトニッポン": {
+=======
+        "artist": "佐久間宣行(TV東京・プロデューサー)"
+	},
+	"三四郎のオールナイトニッポン": {
+>>>>>>> b9c2b34699c7c78da95c107c36f1f13d266c6743
         "title": "三四郎のオールナイトニッポン",
         "day": "saturday",
         "station": "LFR",
         "start": "0100",
         "end": "0300",
+<<<<<<< HEAD
         "artist": "三四郎(小宮浩信/相田周二)",
         "playlist": "5b91a538-7693-4308-b397-6fff59e79470"
     },
     "霜降り明星のオールナイトニッポン0(ZERO)": {
+=======
+        "artist": "三四郎(小宮浩信/相田周二)"
+	},
+	"霜降り明星のオールナイトニッポン0(ZERO)": {
+>>>>>>> b9c2b34699c7c78da95c107c36f1f13d266c6743
         "title": "霜降り明星のオールナイトニッポン0(ZERO)",
         "day": "saturday",
         "station": "LFR",
         "start": "0300",
         "end": "0500",
+<<<<<<< HEAD
         "artist": "霜降り明星(せいや/粗品)",
         "playlist": "fef6d784-40be-416b-8de9-330961b7705d"
     },
@@ -128,4 +176,8 @@
         "artist": "空気階段",
         "playlist": "85cafc23-2339-4532-a9f6-bf70b5cc6fa5"
     }
+=======
+        "artist": "霜降り明星(せいや/粗品)"
+	}
+>>>>>>> b9c2b34699c7c78da95c107c36f1f13d266c6743
 }
