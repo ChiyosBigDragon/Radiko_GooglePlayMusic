@@ -1,0 +1,128 @@
+{
+    "オードリーのオールナイトニッポン": {
+        "title": "オードリーのオールナイトニッポン",
+        "day": "sunday",
+        "station": "LFR",
+        "start": "0100",
+        "end": "0300",
+        "artist": "オードリー(若林正恭/春日俊彰)",
+        "artwork": "./artwork/kw.png"
+    },
+    "JUNK 伊集院光・深夜の馬鹿力": {
+        "title": "JUNK 伊集院光・深夜の馬鹿力",
+        "day": "tuesday",
+        "station": "TBS",
+        "start": "0100",
+        "end": "0300",
+        "artist": "伊集院光",
+        "artwork": "./artwork/baka.jpg"
+    },
+    "JUNK 爆笑問題カーボーイ": {
+        "title": "JUNK 爆笑問題カーボーイ",
+        "day": "wednesday",
+        "station": "TBS",
+        "start": "0100",
+        "end": "0300",
+        "artist": "爆笑問題",
+        "artwork": "./artwork/bakusho.jpg"
+    },
+    "JUNK 山里亮太の不毛な議論": {
+        "title": "JUNK 山里亮太の不毛な議論",
+        "day": "thursday",
+        "station": "TBS",
+        "start": "0100",
+        "end": "0300",
+        "artist": "山里亮太",
+        "artwork": "./artwork/fumou.jpg"
+    },
+    "JUNK おぎやはぎのメガネびいき": {
+        "title": "JUNK おぎやはぎのメガネびいき",
+        "day": "friday",
+        "station": "TBS",
+        "start": "0100",
+        "end": "0300",
+        "artist": "おぎやはぎ",
+        "artwork": "./artwork/megane.jpg"
+    },
+    "JUNK バナナマンのバナナムーンGOLD": {
+        "title": "JUNK バナナマンのバナナムーンGOLD",
+        "day": "saturday",
+        "station": "TBS",
+        "start": "0100",
+        "end": "0300",
+        "artist": "バナナマン",
+        "artwork": "./artwork/banana.jpg"
+    },
+    "マイナビ Laughter Night": {
+        "title": "マイナビ Laughter Night",
+        "day": "saturday",
+        "station": "TBS",
+        "start": "0000",
+        "end": "0100",
+        "artist": "若林有子（TBSアナウンサー）/真空ジェシカ",
+        "artwork": "./artwork/laughter.jpg"
+    },
+    "Creepy Nutsのオールナイトニッポン0(ZERO)": {
+        "title": "Creepy Nutsのオールナイトニッポン0(ZERO)",
+        "day": "wednesday",
+        "station": "LFR",
+        "start": "0300",
+        "end": "0430",
+        "artist": "Creepy Nuts（R-指定、DJ松永）",
+        "artwork": "./artwork/cn.png"
+    },
+    "佐久間宣行のオールナイトニッポン0(ZERO)": {
+        "title": "佐久間宣行のオールナイトニッポン0(ZERO)",
+        "day": "thursday",
+        "station": "LFR",
+        "start": "0300",
+        "end": "0430",
+        "artist": "佐久間宣行(TV東京・プロデューサー)",
+        "artwork": "./artwork/sakuma.png"
+    },
+    "三四郎のオールナイトニッポン": {
+        "title": "三四郎のオールナイトニッポン",
+        "day": "saturday",
+        "station": "LFR",
+        "start": "0100",
+        "end": "0300",
+        "artist": "三四郎(小宮浩信/相田周二)",
+        "artwork": "./artwork/346.png"
+    },
+    "霜降り明星のオールナイトニッポン0(ZERO)": {
+        "title": "霜降り明星のオールナイトニッポン0(ZERO)",
+        "day": "saturday",
+        "station": "LFR",
+        "start": "0300",
+        "end": "0500",
+        "artist": "霜降り明星(せいや/粗品)",
+        "artwork": "./artwork/ss.png"
+    },
+    "ファーストサマーウイカのオールナイトニッポン0(ZERO)": {
+        "title": "ファーストサマーウイカのオールナイトニッポン0(ZERO)",
+        "day": "tuesday",
+        "station": "LFR",
+        "start": "0300",
+        "end": "0430",
+        "artist": "ファーストサマーウイカ",
+        "artwork": "./artwork/fsu.png"
+    },
+    "さらば青春の光がTaダ、Baカ、Saワギ": {
+        "title": "さらば青春の光がTaダ、Baカ、Saワギ",
+        "day": "sunday",
+        "station": "TBS",
+        "start": "0300",
+        "end": "0330",
+        "artist": "さらば青春の光",
+        "artwork": "./artwork/saraba.jpg"
+    },
+    "空気階段の踊り場": {
+        "title": "空気階段の踊り場",
+        "day": "sunday",
+        "station": "TBS",
+        "start": "0330",
+        "end": "0400",
+        "artist": "空気階段",
+        "artwork": "./artwork/odoriba.jpg"
+    }
+}
