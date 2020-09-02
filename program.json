@@ -7,7 +7,7 @@
         "end": "0300",
         "artist": "オードリー(若林正恭/春日俊彰)",
         "artwork": "./artwork/audrey.png",
-        "playlist": "ca0dd8ae-4eb8-4d03-a832-6092c19ab8fd"
+        "playlist": "bc81e808-663b-4a07-b093-92f420e90df7"
     },
     "JUNK 伊集院光・深夜の馬鹿力": {
         "title": "JUNK 伊集院光・深夜の馬鹿力",
@@ -17,7 +17,7 @@
         "end": "0300",
         "artist": "伊集院光",
         "artwork": "./artwork/baka.png",
-        "playlist": "15c1b264-dbd3-4dc2-9258-3dbf45f200b9"
+        "playlist": "b71797b6-0039-4461-ad14-0c0d8bc4befe"
     },
     "JUNK 爆笑問題カーボーイ": {
         "title": "JUNK 爆笑問題カーボーイ",
@@ -27,6 +27,105 @@
         "end": "0300",
         "artist": "爆笑問題",
         "artwork": "./artwork/cowboy.png",
-        "playlist": "2a321013-a21b-4d82-b47b-d53553ded398"
+        "playlist": "60d224de-4776-4762-a990-9c5de5bcb4b9"
+    },
+    "JUNK 山里亮太の不毛な議論": {
+        "title": "JUNK 山里亮太の不毛な議論",
+        "day": "thursday",
+        "station": "TBS",
+        "start": "0100",
+        "end": "0300",
+        "artist": "山里亮太",
+        "playlist": "2d997138-c148-48f7-9d06-07315137b439"
+    },
+    "JUNK おぎやはぎのメガネびいき": {
+        "title": "JUNK おぎやはぎのメガネびいき",
+        "day": "friday",
+        "station": "TBS",
+        "start": "0100",
+        "end": "0300",
+        "artist": "おぎやはぎ",
+        "playlist": "2735e0b2-a638-47ec-9350-21e995cd8e39"
+    },
+    "JUNK バナナマンのバナナムーンGOLD": {
+        "title": "JUNK バナナマンのバナナムーンGOLD",
+        "day": "saturday",
+        "station": "TBS",
+        "start": "0100",
+        "end": "0300",
+        "artist": "バナナマン",
+        "playlist": "ecff11ca-8057-4407-bbf5-79a5318c9d27"
+    },
+    "マイナビ Laughter Night": {
+        "title": "マイナビ Laughter Night",
+        "day": "saturday",
+        "station": "TBS",
+        "start": "0000",
+        "end": "0100",
+        "artist": "伊東楓（TBSアナウンサー）/空気階段",
+        "playlist": "5fb3d426-928e-4e7f-91be-f899188d0395"
+    },
+    "Creepy Nutsのオールナイトニッポン0(ZERO)": {
+        "title": "Creepy Nutsのオールナイトニッポン0(ZERO)",
+        "day": "wednesday",
+        "station": "LFR",
+        "start": "0300",
+        "end": "0430",
+        "artist": "Creepy Nuts（R-指定、DJ松永）",
+        "playlist": "002af663-5b56-43a5-8b85-4a4a9be6337d"
+    },
+    "佐久間宣行のオールナイトニッポン0(ZERO)": {
+        "title": "佐久間宣行のオールナイトニッポン0(ZERO)",
+        "day": "thursday",
+        "station": "LFR",
+        "start": "0300",
+        "end": "0430",
+        "artist": "佐久間宣行(TV東京・プロデューサー)",
+        "playlist": "c758814b-614f-46c9-9df6-44c15bd47db5"
+    },
+    "三四郎のオールナイトニッポン": {
+        "title": "三四郎のオールナイトニッポン",
+        "day": "saturday",
+        "station": "LFR",
+        "start": "0100",
+        "end": "0300",
+        "artist": "三四郎(小宮浩信/相田周二)",
+        "playlist": "5b91a538-7693-4308-b397-6fff59e79470"
+    },
+    "霜降り明星のオールナイトニッポン0(ZERO)": {
+        "title": "霜降り明星のオールナイトニッポン0(ZERO)",
+        "day": "saturday",
+        "station": "LFR",
+        "start": "0300",
+        "end": "0500",
+        "artist": "霜降り明星(せいや/粗品)",
+        "playlist": "fef6d784-40be-416b-8de9-330961b7705d"
+    },
+    "ファーストサマーウイカのオールナイトニッポン0(ZERO)": {
+        "title": "ファーストサマーウイカのオールナイトニッポン0(ZERO)",
+        "day": "tuesday",
+        "station": "LFR",
+        "start": "0300",
+        "end": "0430",
+        "artist": "ファーストサマーウイカ",
+        "playlist": "5f9be443-ffe3-4866-bf02-b14658944273"
+    },
+    "さらば青春の光がTaダ、Baカ、Saワギ": {
+        "title": "さらば青春の光がTaダ、Baカ、Saワギ",
+        "day": "sunday",
+        "station": "TBS",
+        "start": "0300",
+        "end": "0330",
+        "artist": "さらば青春の光",
+        "playlist": "4379a065-91b4-428a-b82a-5b07c41a9f7b"
+    },
+    "空気階段の踊り場": {
+        "title": "空気階段の踊り場",
+        "day": "sunday",
+        "station": "TBS",
+        "start": "0330",
+        "end": "0400",
+        "artist": "空気階段",
+        "playlist": "85cafc23-2339-4532-a9f6-bf70b5cc6fa5"
     }
 }

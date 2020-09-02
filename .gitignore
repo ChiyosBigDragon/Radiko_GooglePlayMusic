@@ -1,3 +1,4 @@
 *.cred
 artwork/
 rec/
+headers_auth.json
