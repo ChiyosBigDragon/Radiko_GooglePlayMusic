@@ -7,12 +7,33 @@ import subprocess
 import argparse
 from ytmusicapi import YTMusic
 import mutagen
+import re
+import requests
+from bs4 import BeautifulSoup
+import base64
 
 CACHE = "./cache_yt.json"
 PROGRAM = "./program_yt.json"
 RECORD_DIR = "./rec_yt/"
+ARTWORK_DIR = "./artwork/"
 
-def upload(ytmusic, file, cache, program):
+def scrape(station, date_start):
+    url = f"http://radiko.jp/v3/program/station/weekly/{station}.xml"
+    res = requests.get(url)
+    soup = BeautifulSoup(res.content, "xml")
+    page = soup.find("prog", ft=f"{date_start}00")
+    date_end = page.get("to")
+    title = page.find("title").text
+    pfm = page.find("pfm").text
+    img = page.find('img').text
+    _root, ext = os.path.splitext(img)
+    path = ARTWORK_DIR + f"{date_start} {title}" + ext
+    src = requests.get(img)
+    with open(path, 'wb') as file :
+        file.write(src.content)
+    return title, date_end[0:12], pfm, path
+
+def upload(ytmusic, file):
     # アップロード
     print("[upload] " + file, file=sys.stderr)
     # ID取得
@@ -106,7 +127,6 @@ def login():
     # ログイン
     print("[login] Youtube Music", file=sys.stderr)
     ytmusic = YTMusic("headers_auth.json")
-    print("[done]", file=sys.stderr)
     return ytmusic
     
 def get_option():
@@ -114,6 +134,34 @@ def get_option():
     argparser.add_argument("-r", "--remove", action="store_true",
                            help="Remove record file")
     return argparser.parse_args()
+
+def weekly(ytmusic, station, day, start):
+    # 日付取得
+    date = subprocess.check_output(["date", "+%Y%m%d", "-d", "next " + day], universal_newlines=True).strip()
+    date = subprocess.check_output(["date", "+%Y%m%d", "-d", "7 days ago " + date], universal_newlines=True).strip()
+    date_start = date + start
+    title, date_end, pfm, img_path = scrape(station, date_start)
+    date_title = f"{date_start} {title}"
+    # キャッシュ作成
+    if not (title in cache):
+        cache[title] = list()
+    # キャッシュヒット
+    if date in cache[title]:
+        print(f"[skip] {date_title}", file=sys.stderr)
+        return
+    # 録音
+    print(f"[rec] {date_title}", file=sys.stderr)
+    if 1 == subprocess.run(["./rec_radiko_ts.sh", "-s", station, "-f", date_start, "-t", date_end, "-o", RECORD_DIR + date_title]):
+        print(f"[error] {date_title}", file=sys.stderr)
+        return
+    print(f"[done] {date_title}", file=sys.stderr)
+    file_path = RECORD_DIR + date_title + ".m4a"
+    # タグ編集
+    setID3(file=file_path, artist=pfm, album=title, artwork=img_path)
+    # アップロード
+    upload(ytmusic=ytmusic, file=file_path)
+    # キャッシュ書き込み
+    cache[title].append(date)
 
 if __name__ == "__main__":
     # 引数設定
@@ -131,11 +179,11 @@ if __name__ == "__main__":
     program = None
     with open(PROGRAM, "r") as f:
         program = json.load(f)
-    print("[done]", file=sys.stderr)
     
     # 録音
     for key in program:
-        record(ytmusic, program[key], cache, program)
+        weekly(ytmusic, program[key]["station"], program[key]["day"], program[key]["start"])
+        # record(ytmusic, program[key], cache, program)
 
     print("[save] information", file=sys.stderr)
     # キャッシュ書き込み
@@ -144,7 +192,6 @@ if __name__ == "__main__":
     # 番組情報書き込み
     with open(PROGRAM, "w") as f:
         json.dump(program, f, indent=4, ensure_ascii=False)
-    print("[done]", file=sys.stderr)
 
     # ファイル削除
     if args.remove:
