@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]>
+<html lang="ja" class="ie ie7"></html><![endif]-->
+<!--[if IE 8 ]>
+<html lang="ja" class="ie ie8"></html><![endif]-->
+<!--[if IE 9 ]>
+<html lang="ja" class="ie9"></html><![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="ja"><!--<![endif]-->
+<head>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8"/>
+<meta content="!" name="fragment"/>
+<meta content="radiko, ラジコ, らじこ, radio, ラジオ, エリアフリー聴取, radikoプレミアム" name="keywords">
+<meta content="radiko(ラジコ)はスマートフォンやパソコン等でラジオが聴ける無料のサービスです。1週間以内に放送された番組が聴けるタイムフリー聴取機能や、全国のラジオが聴き放題のラジコプレミアムも！" name="description">
+<meta content="radiko | インターネットでラジオが聴ける" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="ラジコは、スマホやパソコンでラジオが聴けるサービスです。今いるエリアのラジオ放送局なら無料で、ラジコプレミアムなら全国のラジオ放送局が聴き放題。過去1週間以内に放送された番組を後から聴けるタイムフリー聴取機能も。" property="og:description"/>
+<meta content="http://radiko.jp/" property="og:url"/>
+<meta content="radiko" property="og:site_name"/>
+<meta content="http://radiko.jp/images/radiko-icon-circle.png?_=1" property="og:image"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="@radiko_jp" name="twitter:site"/>
+<meta content="radiko" name="twitter:title"/>
+<meta content="ラジコは、スマホやパソコンでラジオが聴けるサービスです。今いるエリアのラジオ放送局なら無料で、ラジコプレミアムなら全国のラジオ放送局が聴き放題。過去1週間以内に放送された番組を後から聴けるタイムフリー聴取機能も。" name="twitter:description"/>
+<title>radiko(ラジコ) | ラジオがインターネット（アプリやパソコン）で無料で聴ける</title>
+<link href="/apps/css/style.css?_=20190327" rel="stylesheet"/>
+<link href="/apps/css/add.css?_=20171218" rel="stylesheet"/>
+<link href="/apps/lib/slick/slick.css" rel="stylesheet">
+<link href="/apps/lib/slick/slick-theme.css" rel="stylesheet">
+<link href="/apps/css/dragController_ts.css?_=20171218" rel="stylesheet"/>
+<link href="/apps/css/jquery.minimalect.min.css" rel="stylesheet"/>
+<link href="/apps/css/add_animetion.css?_=20180110" rel="stylesheet"/>
+<!-- raidko全体のルール -->
+<link href="/rg/common/css/style.css" rel="stylesheet"/>
+<script src="/apps/lib/jquery-1.9.0.js"></script>
+<script src="/apps/lib/marquee.js"></script>
+<script src="/apps/lib/jquery-migrate-1.2.1.min.js"></script>
+<script src="/apps/lib/slick/slick.min.js"></script>
+<script src="/apps/lib/handlebars.min.js"></script>
+<script src="/apps/lib/moment/moment.js?_=20171002"></script>
+<script src="/apps/lib/json2.js"></script>
+<script src="/apps/lib/underscore-min.js"></script>
+<script src="/apps/lib/underscore.ie.shim.js"></script>
+<script src="/apps/lib/backbone.js"></script>
+<script src="/apps/lib/backbone.fetch-cache.js"></script>
+<script src="/apps/lib/jquery-ui.min.js"></script>
+<script src="/apps/lib/ZeroClipboard.min.js"></script>
+<script src="/apps/lib/easyselectbox.min.js"></script>
+<script src="/apps/lib/jquery.ba-hashchange.min.js"></script>
+<script src="/apps/lib/path.js"></script>
+<script src="/apps/lib/clipboard.min.js?_=20170808"></script>
+<script src="/apps/lib/jquery.cookie-min.js"></script>
+<script src="/apps/lib/jquery.colorbox-min.js"></script>
+<script src="/apps/lib/jquery.heightLine.js"></script>
+<script src="/apps/lib/jquery-scrolltofixed-min.js"></script>
+<script src="/apps/lib/jquery.color.js"></script>
+<script src="/apps/lib/twitter-text.js"></script>
+<script src="/apps/lib/md5.js"></script>
+<script src="/apps/lib/jquery.placeholder.min.js"></script>
+<script src="/apps/lib/store.min.js?_=20171002"></script>
+<!-- radiko全体のルール -->
+<script src="/rg/common/js/app.js"></script>
+<script src="/apps/js/ajax-templates.js"></script>
+<script src="/apps/js/radikoJSPlayer.js?_=1593174323"></script>
+<script src="/apps/js/jst.js?_=1589960848"></script>
+<script src="/apps/js/bookmark.js"></script>
+<script src="/apps/js/common.js?_=1592469566"></script>
+<script src="/apps/js/rapf.js"></script>
+<script src="/apps/js/radikoTicket.js?_=1582031112"></script>
+<script src="/apps/js/radikoNoa.js?_=20190218"></script>
+<script src="/apps/js/radikoDMP.js"></script>
+<script src="/apps/js/radikoADK.js"></script>
+<script src="/apps/js/flash/radiko_player.js" type="text/javascript"></script>
+<script src="/apps/js/flash/program.js" type="text/javascript"></script>
+<script src="/apps/js/flash/xdate.js" type="text/javascript"></script>
+<script src="/apps/js/flash/jsrender.min.js" type="text/javascript"></script>
+<script src="/apps/js/flash/sprintf.js" type="text/javascript"></script>
+<script src="/apps/js/playerCommon.js?_=1584410998" type="text/javascript"></script>
+<script src="/apps/js/sharePlayerCommon.js?_=1584410998" type="text/javascript"></script>
+<script src="/apps/js/menu.js"></script>
+<script src="/apps/js/area.js?_=20171218"></script>
+<script src="/apps/js/makeHeader.js?_=20161206"></script>
+<script src="/apps/js/default.js"></script>
+<script src="/apps/js/top.js?_=20161227"></script>
+<script src="/apps/js/add.js"></script>
+<script src="/apps/js/showLive.js?_=1596087488"></script>
+<script src="/apps/js/timetable.js?_=20171002"></script>
+<script src="/apps/js/timetable_ts.js?_=20171002"></script>
+<script src="/apps/js/timetable_ts_station_.js?_=20171002"></script>
+<script src="/apps/js/tsDetail.js?_=1596087488"></script>
+<script src="/apps/js/weekly.js?_=20171002"></script>
+<script src="/apps/js/timetable_scroll.js?_=20181114"></script>
+<script src="/apps/js/areafree.js?_=20171002_v2"></script>
+<script src="/apps/js/infoAll.js?_=20161206"></script>
+<script src="/apps/js/infoPage.js?_=20161206"></script>
+<script src="/apps/js/search.js?_=1579059983"></script>
+<script src="/apps/js/radikoStatic.js"></script>
+<script src="/apps/js/logger.js?_=1579059983"></script>
+<script src="/apps/js/_router.js?_=20190401"></script>
+<!-- DMP DAC AudienceOne -->
+<script type="text/javascript">
+(function(){
+  var oid = '0a44b7362c5d7b1f';
+  var interval = 300; // seconds
+  var timer;
+  try{
+    var params = {
+      getArea : function(){
+        return window.areaId || "";
+      },
+      getStation : function(){
+        return (window.programInfo) ? window.programInfo.stationId || "" : "";
+      },
+      getProgram : function(){
+        return (window.programInfo) ? encodeURIComponent(window.programInfo.title) || "" : "";
+      },
+      isPlaying : function(){
+        return (typeof player != "undefined" && player.isPlaying) ?  player.isPlaying() : !1;
+      }
+    }
+    var url_base = ('https:' == document.location.protocol ? 'https' : 'http')+'://penta.a.one.impact-ad.jp/dc?';
+    var sendRequest = function(){
+      var collect_params = [];
+      var collect_url = "http://radiko.jp/";
+      if(params.getArea()){
+        collect_params.push(params.getArea());
+        if(params.getStation()){
+          collect_params.push(params.getStation());
+          if(params.getProgram()){
+            collect_params.push(params.getProgram());
+          }
+        }
+      }
+      var collect_queryparam = "?playing=";
+      collect_queryparam += params.isPlaying() ? "ON" : "OFF";
+      collect_queryparam += (typeof uid3 != "undefined") ? "&radiko_id="+uid3() : "";
+      collect_params.push(collect_queryparam);
+      collect_url += collect_params.join("/");
+      var aone_params = [];
+      aone_params.push("oid=" + oid);
+      aone_params.push("src=" + encodeURIComponent(collect_url));
+      var img=document.createElement('img');
+      img.setAttribute('width', '1');
+      img.setAttribute('height', '1');
+      img.setAttribute('style', 'display:none');
+      img.src=url_base + aone_params.join("&");
+      var b = document.getElementsByTagName('script')[0];
+      b.parentNode.insertBefore(img, b);
+    };
+    if ("complete" == document.readyState){
+        sendRequest();
+    }else{
+        if(window.addEventListener) {
+            window.addEventListener("load", function(){sendRequest();}, false);
+        }else if (window.attachEvent) {
+            window.attachEvent("onload", function(){sendRequest();});
+        }else{
+            window.onload = function(){sendRequest();};
+        }
+    }
+    timer = setInterval(function(){sendRequest()}, interval * 1000);
+  }catch(e){clearInterval(timer)}
+})();
+</script>
+<!-- /DMP DAC AudienceOne -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5ZJ94GW');</script>
+<!-- End Google Tag Manager -->
+</link></link></meta></meta></head>
+<body id="radikojp">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5ZJ94GW" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- People Driven DMP -->
+<script src="/apps/js/peopleDriven.js?_=1584411552" type="text/javascript"></script>
+<!-- /People Driven DMP -->
+<object data="/apps/js/flash/myplayer-release.swf" height="10" id="flash" style="visibility: visible; top: -10px;" type="application/x-shockwave-flash" width="10">
+<param name="menu" value="false"/>
+<param name="allowScriptAccess" value="always"/>
+<!--[if lte IE 8]>
+    <param name="movie" value="/apps/js/flash/myplayer-release.swf">
+    <![endif]-->
+</object>
+<div class="container">
+<div class="alert-flash">
+<i class="icon icon--alert-flash"></i>
+<a href="http://faq.radiko.jp/faq/show/303" target="_blank">【重要】ラジコをご利用いただくには、Adobe社のFlashPlayerをインストールし、有効にしてください。</a>
+<button class="btn" href="#colorbox--alert-flash">閉じる</button>
+</div>
+<div class="header header--not-login" id="header"></div>
+<div id="player-area">
+<input id="url" type="hidden" value=""/>
+<input id="tmpUrl" type="hidden" value=""/>
+<div class="player-area" id="stream-player">
+<div class="player-area__inner group" style="margin:0 auto;width:1000px;">
+<p class="player-area__btn player__play" id="play"><a class="item music-start" href="javascript:void(0);"><i class="icon icon--play-02"></i><span>再生</span></a></p>
+<p class="player-area__btn player__stop" id="pause"><a class="item" href="javascript:void(0);"><i class="icon icon--stop"></i><span>停止</span></a></p>
+<div class="player-area__volume">
+<i class="icon icon--volume"></i>
+<div class="volume-bar" id="volume">
+<div class="bar active"></div>
+<div class="volume-slider"><div class="btn knob ui-draggable ui-draggable-handle"><i class="icon icon--volume-btn"></i></div></div>
+</div>
+</div>
+<div class="player-area__seek"></div>
+<div class="player-area__detail" id="player-detail">
+</div>
+<div id="ts-program-list" style="display: none"></div>
+</div>
+</div>
+</div>
+<div class="content__outer" id="contents"></div>
+<div class="footer" id="footer"></div>
+</div>
+<div class="colorbox">
+<div id="colorbox--oversea">
+<p class="colorbox__title text-left text-small">ラジコは、日本国内限定のサービスとなりますので、今アクセスしている場所からお聴きいただくことはできません。</p>
+<p class="colorbox__text text-left text-small">This application program is released for use in Japan only and is not to be used in any other country.</p>
+<hr class="colorbox__hr"/>
+<ul class="colorbox__link text-left">
+<li>
+<a href=""><i class="icon icon--arrow-r-02 icon--left"></i>配信エリアと放送局について<span class="small">Distribution area and Broadcasting station</span></a>
+</li>
+<li>
+<a href=""><i class="icon icon--arrow-r-02 icon--left"></i>お問い合わせ<span class="small">Contact</span></a>
+</li>
+</ul>
+</div>
+<div id="colorbox--alert-flash">
+<p class="colorbox__title">この通知を非表示にします。</p>
+<p class="colorbox__link"><a href="javascript:void(0)"><i class="icon icon--agree-off icon--left"></i>今後、この通知を表示しない</a></p>
+<p class="colorbox__btn"><a class="btn btn--primary btn--xx-large" href="javascript:void(0)">OK</a></p>
+</div>
+</div>
+<div class="alert" hidden=""></div>
+</body>
+</html>
+

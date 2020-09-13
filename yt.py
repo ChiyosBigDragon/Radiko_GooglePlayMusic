@@ -20,7 +20,6 @@ def upload(ytmusic, file, cache, program):
     # アップロード成功
     print("[done] " + file, file=sys.stderr)
 
-# タグつけると壊れるので保留
 def setID3(file, artist=None, album=None, artwork=None):
     f = mutagen.File(file)
     if artist is not None:
