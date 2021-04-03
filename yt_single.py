@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 import base64
 
 CACHE = "./cache_yt.json"
-PROGRAM = "./program_yt.json"
+PROGRAM = "./program_yt_single.json"
 RECORD_DIR = "./rec_yt/"
 ARTWORK_DIR = "./artwork/"
 
@@ -57,32 +57,32 @@ def setID3(file, artist=None, album=None, artwork=None):
                 f["covr"] = [mutagen.mp4.MP4Cover(img.read(), imageformat=mutagen.mp4.MP4Cover.FORMAT_JPEG)]
     f.save()
 
-def record(ytmusic, obj, cache, program):
+def record(ytmusic, station, date, start):
     # 日付取得
-    date = subprocess.check_output(["date", "+%Y%m%d", "-d", "next " + obj["day"]], universal_newlines=True).strip()
-    date = subprocess.check_output(["date", "+%Y%m%d", "-d", "7 days ago " + date], universal_newlines=True).strip()
-    start = date + obj["start"]
-    end = date + obj["end"]
-    title = start + " " + obj["title"]
+    date_start = date + start
+    title, date_end, pfm, img_path = scrape(station, date_start)
+    date_title = f"{date_start} {title}"
     # キャッシュ作成
-    if not (obj["title"] in cache):
-        cache[obj["title"]] = list()
+    if not (title in cache):
+        cache[title] = list()
     # キャッシュヒット
-    if date in cache[obj["title"]]:
-        print("[skip] " + title, file=sys.stderr)
+    if date in cache[title]:
+        print(f"[skip] {date_title}", file=sys.stderr)
         return
     # 録音
-    print("[rec] " + title, file=sys.stderr)
-    if 1 == subprocess.run(["./rec_radiko_ts.sh", "-s", obj["station"], "-f", start, "-t", end, "-o", RECORD_DIR + title]):
-        print("[error] " + title, file=sys.stderr)
+    print(f"[rec] {date_title}", file=sys.stderr)
+    if 1 == subprocess.run(["./rec_radiko_ts.sh", "-s", station, "-f", date_start, "-t", date_end, "-o", RECORD_DIR + date_title]):
+        print(f"[error] {date_title}", file=sys.stderr)
         return
-    print("[done] " + title, file=sys.stderr)
+    print(f"[done] {date_title}", file=sys.stderr)
+    file_path = RECORD_DIR + date_title + ".m4a"
     # タグ編集
-    setID3(file=RECORD_DIR+title+".m4a", artist=obj["artist"], album=obj["title"], artwork=obj["artwork"])
+    setID3(file=file_path, artist=pfm, album=title, artwork=img_path)
     # アップロード
-    upload(ytmusic=ytmusic, program=program[obj["title"]], file=RECORD_DIR+title+".m4a", cache=cache)
+    upload(ytmusic=ytmusic, file=file_path)
     # キャッシュ書き込み
-    cache[obj["title"]].append(date)
+    cache[title].append(date)
+
 
 def first_init():
     # 初回のみ認証
@@ -135,21 +135,10 @@ def get_option():
                            help="Remove record file")
     return argparser.parse_args()
 
-# 該当曜日の直近の日付
-def get_date_for_weekly(day, start):
-    _date = subprocess.check_output(["date", "+%F", "-d", "next " + day], universal_newlines=True).strip()
-    _date = subprocess.check_output(["date", "+%F", "-d", "7 days ago " + _date], universal_newlines=True).strip()
-    now = int(subprocess.check_output(["date", "+%s"], universal_newlines=True).strip())
-    target = int(subprocess.check_output(["date", "+%s", "-d", f"{_date} {start}"], universal_newlines=True).strip())
-    
-    date = subprocess.check_output(["date", "+%Y%m%d", "-d", _date], universal_newlines=True).strip()
-    if now < target:
-        date = subprocess.check_output(["date", "+%Y%m%d", "-d", "7 days ago " + date], universal_newlines=True).strip()
-    return date
-
 def weekly(ytmusic, station, day, start):
     # 日付取得
-    date = get_date_for_weekly(day, start)
+    date = subprocess.check_output(["date", "+%Y%m%d", "-d", "next " + day], universal_newlines=True).strip()
+    date = subprocess.check_output(["date", "+%Y%m%d", "-d", "7 days ago " + date], universal_newlines=True).strip()
     date_start = date + start
     title, date_end, pfm, img_path = scrape(station, date_start)
     date_title = f"{date_start} {title}"
@@ -193,8 +182,7 @@ if __name__ == "__main__":
     
     # 録音
     for key in program:
-        weekly(ytmusic, program[key]["station"], program[key]["day"], program[key]["start"])
-        # record(ytmusic, program[key], cache, program)
+        record(ytmusic, program[key]["station"], program[key]["date"], program[key]["start"])
 
     print("[save] information", file=sys.stderr)
     # キャッシュ書き込み

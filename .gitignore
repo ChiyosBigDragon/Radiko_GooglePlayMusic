@@ -3,3 +3,4 @@ artwork/
 rec/
 rec_yt/
 headers_auth.json
+__pycache__

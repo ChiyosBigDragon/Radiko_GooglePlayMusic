@@ -59,7 +59,7 @@
         "station": "TBS",
         "start": "0000",
         "end": "0100",
-        "artist": "若林有子（TBSアナウンサー）/真空ジェシカ",
+        "artist": "若林有子（TBSアナウンサー）/オズワルド",
         "artwork": "./artwork/laughter.jpg"
     },
     "Creepy Nutsのオールナイトニッポン0(ZERO)": {
@@ -80,21 +80,29 @@
         "artist": "佐久間宣行(TV東京・プロデューサー)",
         "artwork": "./artwork/sakuma.png"
     },
-    "三四郎のオールナイトニッポン": {
-        "title": "三四郎のオールナイトニッポン",
-        "day": "saturday",
+    "マヂカルラブリーのオールナイトニッポン0(ZERO)": {
+        "title": "マヂカルラブリーのオールナイトニッポン0(ZERO)",
+        "day": "friday",
         "station": "LFR",
-        "start": "0100",
-        "end": "0300",
-        "artist": "三四郎(小宮浩信/相田周二)",
-        "artwork": "./artwork/346.png"
+        "start": "0300",
+        "end": "0430",
+        "artist": "マヂカルラブリー"
     },
-    "霜降り明星のオールナイトニッポン0(ZERO)": {
-        "title": "霜降り明星のオールナイトニッポン0(ZERO)",
+    "三四郎のオールナイトニッポン0(ZERO)": {
+        "title": "三四郎のオールナイトニッポン0(ZERO)",
         "day": "saturday",
         "station": "LFR",
         "start": "0300",
         "end": "0500",
+        "artist": "三四郎(小宮浩信/相田周二)",
+        "artwork": "./artwork/346.png"
+    },
+    "霜降り明星のオールナイトニッポン": {
+        "title": "霜降り明星のオールナイトニッポン",
+        "day": "saturday",
+        "station": "LFR",
+        "start": "0100",
+        "end": "0300",
         "artist": "霜降り明星(せいや/粗品)",
         "artwork": "./artwork/ss.png"
     },
@@ -118,11 +126,66 @@
     },
     "空気階段の踊り場": {
         "title": "空気階段の踊り場",
-        "day": "sunday",
+        "day": "tuesday",
         "station": "TBS",
-        "start": "0330",
-        "end": "0400",
+        "start": "0000",
+        "end": "0100",
         "artist": "空気階段",
         "artwork": "./artwork/odoriba.jpg"
+    },
+    "かまいたちのヘイ！タクシー！": {
+        "title": "かまいたちのヘイ！タクシー！",
+        "day": "monday",
+        "station": "TBS",
+        "start": "2130",
+        "end": "2200",
+        "artist": "かまいたち"
+    },
+    "ラランド・ツキの兎": {
+        "title": "ラランド・ツキの兎",
+        "day": "saturday",
+        "station": "TBS",
+        "start": "2330",
+        "end": "2400",
+        "artist": "ラランド"
+    },
+    "アルコ＆ピース D.C.GARAGE": {
+        "title": "アルコ＆ピース D.C.GARAGE",
+        "day": "wednesday",
+        "station": "TBS",
+        "start": "0000",
+        "end": "0100",
+        "artist": "アルコ＆ピース（平子祐希/酒井健太）"
+    },
+    "24時のハコ": {
+        "title": "24時のハコ",
+        "day": "thursday",
+        "station": "TBS",
+        "start": "0000",
+        "end": "0100"
+    },
+    "ハライチのターン！": {
+        "title": "ハライチのターン！",
+        "day": "friday",
+        "station": "TBS",
+        "start": "0000",
+        "end": "0100",
+        "artist": "ハライチ"
+    },
+    "フワちゃんのオールナイトニッポンX(クロス)": {
+        "title": "フワちゃんのオールナイトニッポンX(クロス)",
+        "day": "thursday",
+        "station": "LFR",
+        "start": "0000",
+        "end": "0053",
+        "artist": "フワちゃん"
+    },
+    "ぺこぱのオールナイトニッポンX(クロス)": {
+        "title": "ぺこぱのオールナイトニッポンX(クロス)",
+        "day": "thursday",
+        "station": "LFR",
+        "start": "0000",
+        "end": "0053",
+        "artist": "ぺこぱ（シュウペイ、松陰寺太勇）"
     }
 }
