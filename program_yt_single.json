@@ -1,12 +1,7 @@
 {
-    "nishikigoi": {
+    "ann": {
         "station": "LFR",
-        "date": "20210221",
-        "start": "0300"
-    },
-    "99": {
-        "station": "LFR",
-        "date": "20210219",
-        "start": "0100"
+        "date": "20210331",
+        "start": "2200"
     }
 }

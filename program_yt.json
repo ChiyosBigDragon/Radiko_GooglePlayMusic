@@ -53,6 +53,41 @@
         "artist": "バナナマン",
         "artwork": "./artwork/banana.jpg"
     },
+    "JUNK 伊集院光・深夜の馬鹿力_2": {
+        "title": "JUNK 伊集院光・深夜の馬鹿力_2",
+        "day": "tuesday",
+        "station": "TBS",
+        "start": "0200",
+        "end": "0300"
+    },
+    "JUNK 爆笑問題カーボーイ_2": {
+        "title": "JUNK 爆笑問題カーボーイ_2",
+        "day": "wednesday",
+        "station": "TBS",
+        "start": "0200",
+        "end": "0300"
+    },
+    "JUNK 山里亮太の不毛な議論_2": {
+        "title": "JUNK 山里亮太の不毛な議論_2",
+        "day": "thursday",
+        "station": "TBS",
+        "start": "0200",
+        "end": "0300"
+    },
+    "JUNK おぎやはぎのメガネびいき_2": {
+        "title": "JUNK おぎやはぎのメガネびいき_2",
+        "day": "friday",
+        "station": "TBS",
+        "start": "0200",
+        "end": "0300"
+    },
+    "JUNK バナナマンのバナナムーンGOLD_2": {
+        "title": "JUNK バナナマンのバナナムーンGOLD_2",
+        "day": "saturday",
+        "station": "TBS",
+        "start": "0200",
+        "end": "0300"
+    },
     "マイナビ Laughter Night": {
         "title": "マイナビ Laughter Night",
         "day": "saturday",
@@ -182,7 +217,7 @@
     },
     "ぺこぱのオールナイトニッポンX(クロス)": {
         "title": "ぺこぱのオールナイトニッポンX(クロス)",
-        "day": "thursday",
+        "day": "friday",
         "station": "LFR",
         "start": "0000",
         "end": "0053",

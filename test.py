@@ -32,16 +32,17 @@ def scrape(station, date, date_start):
 
 if __name__ == "__main__":
     ytmusic = yt.login()
-    l = glob.glob('rec_yt/202006190100 JUNK*.m4a')
+    l = glob.glob('rec_yt/202104020000 ぺこぱ*.m4a')
     l.sort()
-    # station = "LFR"
+    station = "LFR"
     for path in l:
         print(path)
-        # date = path[4:12]
-        # date = subprocess.check_output(["date", "+%Y%m%d", "-d", "1day ago " + date], universal_newlines=True).strip()
-        # date_start = path[4:16]
-        # title, date_end, pfm, img_path = scrape(station, date, date_start)
-        # yt.setID3(path, pfm, title, img_path)
+        date = path[7:15]
+        date = subprocess.check_output(["date", "+%Y%m%d", "-d", "1day ago " + date], universal_newlines=True).strip()
+        date_start = path[7:19]
+        print(date_start)
+        title, date_end, pfm, img_path = scrape(station, date, date_start)
+        yt.setID3(path, pfm, title, img_path)
         # date_title = f"{date_start} {title}"
         # new_path = "./rec_yt/" + date_title + ".m4a"
         # print(new_path)
